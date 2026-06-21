@@ -37,7 +37,7 @@ jobs:
       contents: read  # Read commit contents
       security-events: write  # Require writing security events to upload SARIF file to security tab
     if: ${{ github.event_name == 'pull_request' }}
-    uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable-pr.yml@8ae4be80636b94886b3c271caad730985ce0611c" # v2.3.3
+    uses: "google/osv-scanner-action/.github/workflows/osv-scanner-reusable-pr.yml@9a498708959aeaef5ef730655706c5a1df1edbc2" # v2.3.3
     with:
       # Example of specifying custom arguments
       scan-args: |-
